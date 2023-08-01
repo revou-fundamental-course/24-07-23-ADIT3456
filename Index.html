@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>tugas-adit</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- links font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- navigation -->
+    <header>
+      <div class="navbar">
+        <div class="logo">
+          <img src="./assets/logo.png" alt="Logo" />
+        </div>
+        <div class="nav-links">
+          <a href="#home">Home</a>
+          <a href="#Ourpack">our pacakage</a>
+          <a href="#cal"> Call us</a>
+        </div>
+      </div>
+      <!-- titlesub -->
+      <div class="titleheader" id="home">
+        <h1>Welcome the travel Agents</h1>
+        <h3 class="subtitle">Travel throughout Indonesia</h3>
+      </div>
+    </header>
+    <!-- content -->
+    <main>
+      <section class="callus">
+        <article class="article">
+          <!-- Slideshow container -->
+          <div class="slideshow-container">
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 3</div>
+              <img src="./assets/bali.jpeg" style="width: 80%" />
+              <div class="text">Bali</div>
+            </div>
+
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 3</div>
+              <img src="./assets/jakarta1.jpeg" style="width: 80%" />
+              <div class="text">Jakarta</div>
+            </div>
+
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 3</div>
+              <img src="./assets/makasar.jpeg" style="width: 80%" />
+              <div class="text">Caption Three</div>
+            </div>
+
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+          <br />
+
+          <!-- The dots/circles -->
+          <div style="text-align: center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+          </div>
+
+          <!-- <img src="assets/luffy.jpeg" alt="luffy" width="150px" height="250px" /> -->
+          <h5>beli kaset di sini</h5>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing 
+            elit. Laudantium aspernatur rerum, repellend us.</p>
+        </article>
+        <!-- form -->
+        <section class="form">
+          <h3 class="contact">Contact Us</h3>
+          <p>Sales akan menghubungi anda 1x24 jam setelah data kami terima.</p>
+          <br />
+          <form onsubmit="return validateForm()">
+            Nama: <input placeholder="Nama" type="text" id="nama" required />
+            <br />
+            Email: <input placeholder="ABC@gmail.com" type="text" id="email" required />
+            <br />
+            <label for="bahasa" placeholder="tes" id="select">Pilih dimana kamu tinggal </label>
+            <br />
+            <select id="bahasa" name="bahasa">
+              <option value="Family">Bali</option>
+              <option value="Alone">Surabaya</option>
+              <option value="partner">Makassar</option>
+              <option value="big family">Jakarta</option>
+            </select>
+            <br />
+            <input type="submit" value="submit" />
+          </form>
+        </section>
+      </section>
+    </main>
+    <!-- our package -->
+    <div class="pack" id="Ourpack">
+      <h1 class="our">Our Packages</h1>
+    </div>
+    <div class="containerbox">
+      <div class="box">
+          <h3>Jakarta</h3>
+          <p>Jakarta adalah ibu kota Indonesia dan merupakan kota terbesar di negara ini.</p>
+      </div>
+      <div class="box">
+          <h3>Surabaya</h3>
+          <p>Surabaya adalah kota terbesar kedua di Indonesia dan terletak di Jawa Timur.</p>
+      </div>
+      <div class="box">
+          <h3>Bandung</h3>
+          <p>Bandung adalah kota di Jawa Barat yang terkenal dengan keindahan alam dan kebudayaannya.</p>
+      </div>
+  </div>
+  <div class="containerbox">
+  <div class="box">
+    <h3>Medan</h3>
+    <p>Medan adalah kota terbesar di Sumatera Utara dan memiliki kekayaan budaya yang beragam.</p>
+</div>
+<div class="box">
+    <h3>Makassar</h3>
+    <p>Makassar adalah kota terbesar di Sulawesi Selatan dan merupakan pusat perdagangan dan industri.</p>
+</div>
+<div class="box">
+    <h3>Yogyakarta</h3>
+    <p>Yogyakarta adalah kota istimewa yang memiliki kekayaan budaya dan sejarah Indonesia.</p>
+</div>
+</div>
+<div class="cal" id="cal">
+  <h1>thank you for coming to our website</h1>
+  <p>Thank you for coming and traveling at our agency</p>
+</div>
+<footer>
+<h3>created by adit❤️</h3>
+<p>Privacy Policy</p>
+ <p> © 2023 Logo</p>
+</footer>
+    
+
+    <script src="js/index.js"></script>
+  </body>
+</html>

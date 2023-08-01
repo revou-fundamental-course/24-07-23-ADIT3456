@@ -1,0 +1,317 @@
+:root {
+  --primary: #75c2f6;
+  --secondary: #f4d160;
+  --tersery: #fbeeac;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--tersery);
+  box-sizing:border-box;
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* navigasi */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: var(--primary);
+}
+
+.logo img {
+  height: 40px;
+  width: auto;
+}
+
+.nav-links {
+  display: flex;
+  margin-right: 50px;
+  font-size: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #000000;
+  padding: 8px 16px;
+  border: 1px solid #000000;
+}
+
+/* title */
+.titleheader {
+  text-align: center;
+  justify-content: center;
+}
+
+/* content */
+  .callus {
+  padding-left:50px ;
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+  align-items: center;
+
+}
+
+.article {
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.article img {
+  width: 70%;
+  height: max-content;
+}
+
+.contact {
+  font-size: 30px;
+  margin: 20px;
+}
+/* box */
+.containerbox {
+  display: flex;
+  justify-content: center;
+  align-content: space-between;
+}
+.pack {
+ align-items: center;
+ text-align: center;
+ justify-content: center;
+ width: 100%;
+ height: 200px;
+ background-color: var(--primary);
+}
+
+.box {
+  width: 250px;
+  height: 250px;
+  background-color: var(--secondary);
+  margin: 40px;
+  text-align: center;
+  border-radius: 5px;
+}
+.our {
+  padding-top: 80px;
+}
+
+/* Flexbox untuk mengatur form */
+.form {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 15%;
+  padding: 20px;
+  border-radius: 5px;
+  margin-right: 50px;
+  background-color: var(--secondary);
+   padding-top: 80px;
+  margin-top: -130px; 
+}
+
+.form h3,
+.form h6 {
+  margin: 5px 0;
+}
+
+.form input,
+.form select {
+  
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.form input[type="submit"] {
+  background-color: var(--primary);
+  color: white;
+  cursor: pointer;
+}
+
+.form input[type="submit"]:hover {
+  background-color: var(--primary);
+}
+
+
+
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+
+.mySlides {
+  display: none;
+}
+
+
+.prev {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  margin-right:200px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+.cal {
+  background-color: var(--primary);
+  height: 150px;
+  text-align: center;
+ padding-top: 25px;
+}
+footer {
+  height:120px;
+  text-align: center;
+  background-color: var(--secondary);
+}
+
+
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+
+
+/* Media Query*/
+@media screen and (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo img {
+    margin-bottom: 10px;
+  }
+
+  .nav-links {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .callus {
+    flex-direction: column;
+    text-align: center;
+    margin-left: 0;
+    justify-content: center;
+    align-items: center;
+  }
+.article {
+  margin-bottom: 150px;
+  margin-left: -40px;
+}
+  .callus .article,
+  .callus .form {
+    flex: 0 0 100%;
+    margin-right: 0;
+  }
+  .form {
+    margin-left: -40px;
+  }
+  .prev, {
+    position: static;
+    display:flex ;
+    border-radius: 3px;
+  }
+
+  
+  /* Center align the buttons */
+  .prev {
+    margin-right: 5px;
+  }
+  .containerbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .cal {
+    height:200px;
+  }
+  
+}
+
